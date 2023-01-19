@@ -1,0 +1,130 @@
+.parent{
+    background-color: yellow;
+    line-height: 100px;
+    padding-top: 20px;
+}
+.num{
+    padding-top: 50px;
+}
+.box{
+    background-color: pink;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+.one{
+    display: flex;
+    margin-left: 30%;
+    gap: 50px;
+    height: 100%;
+}
+.box1{
+    animation-name: one;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes one {
+       0%{
+        transform: skewX(-30deg);
+       }
+       100%{
+        transform: skewX(30deg);
+       }
+}
+.two{
+    display: flex;
+    margin-left: 30%;
+    gap: 50px;
+    height: 100%;
+}
+.box2{
+    animation-name: two;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes two {
+       0%{
+        transform: skewY(-30deg);
+       }
+       100%{
+        transform: skewY(30deg);
+       }
+}
+.three{
+    display: flex;
+    margin-left: 30%;
+    gap: 50px;
+    height: 100%;
+}
+.box3{
+    animation-name: three;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes three {
+       0%{
+        transform: rotate(0deg);
+       }
+       100%{
+        transform: rotate(360deg);
+       }
+}
+.four{
+    display: flex;
+    margin-left: 30%;
+    gap: 50px;
+    height: 100%;
+}
+.box4{
+    animation-name: four;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes four {
+       0%{
+        transform: scale(1,0.5);
+       }
+       100%{
+        transform: scale(1,1);
+       }
+}
+.box5{
+    background-color: red;
+    animation-name: five;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes five {
+       0%{
+        transform: scale(0.5,1);
+       }
+       100%{
+        transform: scale(1,1);
+       }
+}
+.box6{
+    background-color: lightgreen;
+    animation-name: six;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes six {
+       0%{
+        transform: rotate(0deg);
+       }
+       100%{
+        transform: rotate(180deg);
+       }
+}

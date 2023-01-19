@@ -1,0 +1,103 @@
+.eluru{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    border-left: 20px solid orange;
+    border-right: 20px solid green;
+    border-top: 20px solid white;
+}
+.h1{
+    position: absolute;
+    left: 500px;
+}
+.sky{
+    z-index: -1;
+    position: relative;
+}
+.city{
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: city;
+    position: absolute;
+    top: 282px;
+    width: 150%;
+}
+.car{
+    position: absolute;
+    top: 350px;
+    left: 500px;
+    animation-name: car;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+.sun{
+    position: absolute;
+    left: 1200px;
+}
+.back{
+    animation-name: back;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 460px;
+    left: 545px;
+    
+}
+.front{
+    position: absolute;
+    top: 460px;
+    left: 850px;
+    animation-name: front;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+.flag{
+    position: absolute;
+    top: 340px;
+    left: 850px;
+}
+.road{
+    z-index: -1;
+    width: 100%;
+    animation-name: road;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes road {
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes front {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes back {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes car {
+    0%{
+        transform: translateY(3px);
+    }
+    50%{
+        transform: translateY(-3px);
+    }
+    100%{
+        transform: translateY(3px);
+    }
+}
+@keyframes city {
+    100%{
+        transform: translateX(-5%);
+    }
+}

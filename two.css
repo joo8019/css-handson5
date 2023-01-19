@@ -1,0 +1,39 @@
+body{
+    background-color: yellow;
+}
+.pot{
+    height: 100px;
+    width: 100px;
+    background-color: lightgreen;
+    border: 1px solid black;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+ol{   
+margin-left: 40%;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.div1:hover{
+    width: 300px;
+}
+.div2:hover{
+    height: 300px;
+    width: 300px;
+}
+.div3:hover{
+    width: 300px;
+}
+.div4:hover{
+    width: 300px;
+}
+.div5:hover{
+    width: 300px;
+}
+.div6:hover{
+    width: 300px;
+}
+.div7:hover{
+    width: 300px;
+}
